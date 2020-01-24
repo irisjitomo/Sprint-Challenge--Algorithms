@@ -97,8 +97,7 @@ class SortingRobot:
         Sort the robot's list.
         """
         # Fill this out
-        # I think what the robot can do is bubble sort where it makes two separate arrays 
-        # and sorts them accordingly since its moving from right to left
+        # I think what the robot can do is bubble sort 
         # I just dont know how to go about it in this type of problem
 
         # Basically what I plan to do is first check if light is on
@@ -106,6 +105,16 @@ class SortingRobot:
         # move to the right, call method compare_item, call swap item 
         # if item in front is greater, move left then call swap item again.
         # move right again and do the same thing
+        self.light_is_on()
+        while self.light_is_on:
+            self.set_light_on()
+        while can_move_right():
+            self.move_right()
+            if self.compare_item() == 1:
+                self.swap_item()
+                self.move_left()
+                self.swap_item
+                self.move_right()
         
 
 
