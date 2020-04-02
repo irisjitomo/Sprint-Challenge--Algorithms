@@ -10,14 +10,11 @@ def count_th(word):
     # TBC
     # Base case that if string equals 'th' return 
     # break 'word' into array of letters to see how many 'th' there are
-    if word == 'th':
-        count = count + 1
-    elif word == '':
+    if len(word) <= 1:
         return count
-    def helper_function(word, count):
-        if 'th' in word:
-            count = count + 1
-    helper_function(word, count)
-    return count
+    elif word[:2] == 'th':
+        return 1 + count_th(word[2:])
+    else:
+        return 0 + count_th(word[1:])
 
 print(count_th('ththth'))
