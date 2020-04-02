@@ -119,7 +119,7 @@ class SortingRobot:
                 '''
             self.swap_item() # swap with none and drop smallest item
             self.move_right() # move right so everything to left of "none" is sorted
-            self.swap_item() # dropping none for next unsorted value and continuing on
+            self.swap_item() # dropping none for next unsorted value and continuing on 
         
 
 

@@ -16,5 +16,6 @@ def count_th(word):
         return 1 + count_th(word[2:])
     else:
         return 0 + count_th(word[1:])
+    
 
 print(count_th('ththth'))
